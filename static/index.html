@@ -18,8 +18,8 @@
         form.addEventListener('submit',registerUser)
         async function registerUser(event){
             event.preventDefault()
-            const username = document.grtElementById("username").value
-            const password = document.grtElementById("password").value
+            const username = document.getElementById("username").value
+            const password = document.getElementById("password").value
 
             const result = await fetch('/api/register',{
                 method : 'POST',   //
